@@ -1,0 +1,126 @@
+.hover-tooltip {
+  position: absolute;
+  max-width: 300px;
+  background: #1e1e1e;
+  color: #ffffff;
+  padding: 10px 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  z-index: 9999;
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  opacity: 0;
+  transform: translateY(-5px);
+}
+
+.hover-tooltip.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hover-tooltip .source-lang {
+  font-size: 12px;
+  color: #aaa;
+  margin-top: 5px;
+  display: block;
+  text-align: right;
+}
+
+@media (max-width: 480px) {
+  .hover-tooltip {
+    max-width: 90%;
+    font-size: 13px;
+    padding: 8px 12px;
+  }
+}
+
+.note {
+  font-size: 11px;
+  color: #888;
+  margin-top: 12px;
+  text-align: center;
+}
+
+.hover-tooltip {
+  position: absolute;
+  background: rgba(50, 50, 50, 0.95);
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  max-width: 300px;
+  z-index: 9999;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  transform: translateY(5px);
+}
+
+.hover-tooltip.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hover-tooltip .source-lang {
+  display: block;
+  font-size: 12px;
+  color: #ccc;
+  margin-top: 4px;
+}
+
+#popup-body {
+  margin: 0;
+  padding: 15px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #1e1e1e;
+  color: #fff;
+  width: 300px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+#popup-body h1,
+#popup-body h2,
+#popup-body h3,
+#popup-body label {
+  color: #fff;
+  margin: 8px 0;
+  font-weight: 500;
+}
+
+#popup-body input,
+#popup-body select {
+  width: 100%;
+  padding: 8px 10px;
+  margin: 5px 0 15px 0;
+  border-radius: 8px;
+  border: none;
+  background-color: #2c2c2c;
+  color: #fff;
+  font-size: 14px;
+  box-sizing: border-box;
+  transition: background-color 0.2s ease;
+}
+
+#popup-body input::placeholder {
+  color: #aaa;
+}
+
+#popup-body input:hover,
+#popup-body select:hover,
+#popup-body input:focus,
+#popup-body select:focus {
+  background-color: #3a3a3a;
+  outline: none;
+}
+
+#popup-body .note {
+  font-size: 11px;
+  color: #888;
+  margin-top: 8px;
+  text-align: center;
+}
